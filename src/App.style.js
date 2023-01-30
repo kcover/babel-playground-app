@@ -1,3 +1,7 @@
+import { styled } from '@linaria/react';
+import config from './config.json';
+
+export const StyledApp = styled.div`
 .App {
   text-align: center;
 }
@@ -20,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + ${config.textSize}vmin);
   color: white;
 }
 
@@ -36,3 +40,4 @@
     transform: rotate(360deg);
   }
 }
+`
